@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<title>Eladó családiház Csillaghegyen</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Menü bezárása</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Eladó<br>családiház<br>Csillaghegyen</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">A ház</a>
+    <a href="#foldszint" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Földszint</a>
+    <a href="#emelet" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Emelet</a>
+    <a href="#kornyek" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Környék</a>
+    <a href="#hatranyok" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Mik a hátrányok?</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Kapcsolat</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Eladó családiház Csillaghegyen</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="ahaz">
+    <h1 class="w3-jumbo"><b>Eladó családiház Csillaghegyen</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>A ház</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Legnagyobb sajnálatunkra el kell adnunk az otthonunkat. Egy devizahitelnek köszönhetően nem maradt más lehetőségünk. De ha már így alakult, csináljuk rendesen!
+</p>
+
+	<p>Ezt az oldalt azért hoztuk létre, hogy mindenki alaposan szemügyre vehesse, barátkozhasson vele, választ kapjon a kérdéseire, és nem titkoltan azzal a szándékkal, hogy csak azok jöjjenek el megnézni, akiket komolyan érdekel.</p>
+
+	<p>Ingatlanosok kíméljenek, nem szerződünk le senkivel!</p>
+
+
+   <p>A ház 1982-ben épült, de 2000-ben és 2010-ben két nagy átalakításon és felújításon esett át. Emeletráépítés történt, aztán a villamos- és vízhálózat teljes cseréje. </p>
+
+   <p>A meleget gázcirkó szolgáltatja, amit a földszinten részleges padlófűtés támogat. Van klíma, ami az egész házat kellemesen lehűti egy óra alatt a legnagyobb kánikulában is, és van riasztó is.</p>
+
+   <p>A kert nem túl nagy, de tökéletesen kiszolgál egy nagycsaládot is. Két kiépített terasz van benne, az egyik remek a grillezéshez, a másik pedig kellemes pihenőhely az óriási juhar árnyékában. </p>
+
+   <p>A telken van egy kis ház is, ami a teraszhoz csatlakozik. Régen egy minigarzon volt benne. Mi most fészernek használjuk, de tökéletes műhelynek is. Az alapterülete 20 m2, be van vezetve a víz és a gáz, valamint van benne egy kombi-cirkó is.</p>
+
+   <p>A kertbe két kocsival kényelmesen be lehet állni, de a ház beljebb fekszik az utcafronttól, így akár a kinti parkolórészbe is elfér két autó. Garázs nincs. </p>
+    <p>
+    </p>
+  </div>
+
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="https://i.imgur.com/ZEoLFtV.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+
+    </div>
+
+    <div class="w3-half">
+      <img src="https://imgur.com/BrP98cp.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+
+
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Földszint -->
+  <div class="w3-container" id="foldszint" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Földszint</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>A földszint 80 m2-es, amiben egy amerikaikonyhás-nappali, egy nagy, kényelmes hálószoba, és egy fürdőszoba kapott helyet. (A fürdőt fel kell újítani.)</p>A földszinthez csatlakozik egy télen-nyáron használható, 20m2-es, fedett terasz, ami remek színtere a családi ebédeknek és baráti összejöveteleknek.
+    <p>
+    </p>
+  </div>
+
+
+   <!-- Földszint képek -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="https://imgur.com/NGdvkTO.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+
+      <img src="https://imgur.com/glBcP7I.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+
+      <img src="https://imgur.com/tXDm20J.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+
+      <img src="https://imgur.com/lj3VxUn.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+
+      <img src="https://imgur.com/Mkz9JeX.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+
+     </div>
+
+    <div class="w3-half">
+      <img src="https://imgur.com/cC2tvWo.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+
+      <img src="https://imgur.com/spuKfPQ.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="https://imgur.com/BhgyIWb.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+
+
+
+
+      <img src="https://imgur.com/9k7DFq8.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+
+      <img src="https://imgur.com/8xG2p7X.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+
+    </div>
+  </div>
+
+
+  <!-- Emelet -->
+  <div class="w3-container" id="emelet" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Emelet</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Az emeleten három háló, egy gardrób és egy tágas fürdőszoba található. A szobák kényelmesek, méretük 12-14-16 m2. Egy óriási napozóterasz egészíti ki az emeletet, ami akár egy 6 m3-es medencét is vígan elbír, mivel direkt így került kialakításra.
+    <p>
+    </p>
+  </div>
+
+
+     <!-- Emelet képek -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+
+      <img src="https://imgur.com/F17r9Bt.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="https://imgur.com/Qp09WsJ.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="https://imgur.com/rN82twf.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+
+      <img src="https://imgur.com/yFvGvCS.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+
+      <img src="https://imgur.com/0HFe6y2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+
+
+
+    </div>
+
+
+
+
+
+
+    <div class="w3-half">
+
+      <img src="https://imgur.com/JamVYqY.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="https://imgur.com/hfG5oOW.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="https://imgur.com/2H8nBCI.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+
+      <img src="https://imgur.com/KhHIthp.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+
+      <img src="https://imgur.com/oTY4szv.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+
+
+
+
+    </div>
+  </div>
+
+
+  <!-- Környék -->
+  <div class="w3-container" id="kornyek" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Környék</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <p><b>Miért jó itt lakni?</b>
+    </p>
+
+    <p>Az ingatlan fekvése ideális azoknak, akik több gyerekkel költöznének olyan otthonba, ahol minden karnyújtásnyira van, de több generáció együttélésére is tökéletes. Három perc sétára van a HÉV-megállótól  és Csillaghegy központjától, ahol szinte minden megtalálható. Két non-stop patika (ügyeleti díj nélkül 😊), orvosi rendelő, óvoda, TESCO, pékség, posta, bank. ALDI, LIDL és SPAR is egy kilométeren belül. </p>
+
+
+    <p>Ugyancsak egy kilométer a Római-part, ahol egész nyáron szürcsölhetitek a limonádét a Felliniben, vagy hekkezhettek. A Csillaghegyi strand 5 percre van, ami télen uszodaként üzemel.
+    </p>
+
+    <p>Mert egy kisváros nyugalmát és hangulatát kapod, de húsz perc alatt bármikor a város szívében lehetsz. A kötöttpályás közlekedés a legritkább esetben okoz csalódást, és a HÉV csúcsidőben ötpercenként közlekedik. Egész éjjel jár a busz, úgyhogy bulizás után sem kell taxit hívni.
+Bölcsőde, óvoda, iskola szintén helyben, gyalog is elérhető egy kis sétával, Óbuda három híres gimnáziuma pedig remek a továbbtanulás szempontjából.
+    </p>
+
+    <p>Minden (de tényleg minden) van, amit csak szeretnél. Az emberek barátságosak, a környék gyönyörű. A Megyeri hídon is percek alatt átérsz Pestre, de az Árpád híd is csak 8 perc kocsival.
+Közel van a Lupa, Szentendre is csak 11 km.
+    </p>
+  </div>
+
+  <!-- Elso sor kepek -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://i.imgur.com/bSBY5iG.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h4>Fellini</h4>
+          <p class="w3-opacity">2,5 km</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://i.imgur.com/P7yMQJc.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h4>Csillaghegyi Strandfürdő</h4>
+          <p class="w3-opacity">700 m</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://i.imgur.com/vMxXCu5.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h4>Cziniel Cukrászda</h4>
+          <p class="w3-opacity">2,8 km</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Második sor kepek -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://i.imgur.com/DuEz9Sj.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://i.imgur.com/epcjPif.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Jane Doe</h3>
+          <p class="w3-opacity">Designer</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://i.imgur.com/pysVTKI.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Architect</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Harmadik sor kepek -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://i.imgur.com/BTVbHIU.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://i.imgur.com/hYCHzyi.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Jane Doe</h3>
+          <p class="w3-opacity">Designer</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://i.imgur.com/XlFG0Dj.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Architect</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hátrányok -->
+  <div class="w3-container" id="hatranyok" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Mik a hátrányok?</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <p>A ház főútvonalon áll, tehát nem a nyugalom külvilágtól elzárt szigete. Egy hét után azonban már azt sem tudod megmondani, mikor ment el a HÉV. </p>
+
+    <p>A telek két részből áll, amit egyesítenünk kellett az emeletráépítés miatt. Most az egyik felét adjuk el, a másikba mi költözünk. Teljesen szeparált lesz, mintha külön telek lenne, de a közművek és a beépítési százalékok miatt hivatalosan nem tudjuk szétválasztani. Természetesen, az adásvételi szerződésben mindent messzemenőkig le lehet (és kell is) tisztázni ezzel kapcsolatban. Ami elsőre hátrány, az jobban belegondolva előny is. Mivel mi is a közelben fogunk élni, nem kamuzhatunk a házzal kapcsolatban, úgyhogy kérdezz bátran, mindenre válaszolunk! </p>
+
+    <p><b>Mit kell rajta csinálni?</b></p>
+
+    <p>Hogy mit kell, és mit lehet, az két teljesen különböző fogalom. Ki kell festeni, és a földszinti fürdőszobát fel kell újítani. Aki ragaszkodik a modern nyílászárókhoz, a földszinten kicserélheti a régieket, de ez nem szükségszerű. Nagyobb léptékű felújításra nincs szükség, tulajdonképpen egy tisztasági festés után beköltözhető. </p>
+
+  </div>
+
+
+
+  <!-- Kapcsolat -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Kapcsolat</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+
+    <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>	1039 Budapest, Szentendrei út 365 </p>
+    <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
+    <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
+
+  </div>
+
+  <!-- Google Maps -->
+<div id="googleMap" style="width:100%;height:420px;"></div>
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(47.5883439, 19.0469102);
+  var mapOptions= {
+    center:myCenter,
+    zoom:15, scrollwheel: true, draggable: true,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUyH8P3Mfk0njxuzOWScd7YL7mZaZvguY&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Made with 💖 by Döme</p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
